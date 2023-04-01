@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link'
+import Image from 'next/link'
+import Layout from '../component/layout'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>ESRA SUMER</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,6 +22,8 @@ export default function Home() {
         <Link href='/post'>
           Post
         </Link>
+
+        {/* <Image width="400" height="350" src='/images/six.png.jpg'/> */}
       </main>
 
       <footer>
@@ -83,6 +87,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Layout>
   )
 }

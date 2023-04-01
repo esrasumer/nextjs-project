@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import React from 'react'
 
 function post() {
     return (
@@ -12,4 +11,4 @@ function post() {
     )
 }
 
-export default post
+export default post;
